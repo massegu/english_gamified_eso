@@ -1,0 +1,9 @@
+{
+  "fortnite": {
+    "shield": "A protective item that increases your defense.",
+    "storm": "A dangerous zone that reduces health.",
+    "revive": "To bring a teammate back to life.",
+    "loot": "Items collected from the ground or chests.",
+    "ramp": "A structure used to gain height."
+  }
+}
