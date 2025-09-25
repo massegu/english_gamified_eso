@@ -5,23 +5,21 @@ from exercises.fortnite import vocab_gallery  # ← Añade esta línea
 
 def show():
     option = st.sidebar.radio("Selecciona una temática", [
-         "FortNITE: Vocabulario",
-         "FortNITE: Gramática",
-         "FortNITE: Galería con puntuación",  # ← Nueva opción
-         "Real Madrid: Crónica",
-         "Real Madrid: Jugadores"
-])
+        "FortNITE: Vocabulario",
+        "FortNITE: Gramática",
+        "FortNITE: Galería con puntuación",  
+        "Real Madrid: Crónica",
+        "Real Madrid: Jugadores"
+    ])
 
-if option == "FortNITE: Vocabulario":
-    vocabulary_quiz.run()
-elif option == "FortNITE: Gramática":
-    grammar_challenges.run()
-elif option == "FortNITE: Galería con puntuación":
-    vocab_gallery.run()  # ← Llama al nuevo ejercicio
-elif option == "Real Madrid: Crónica":
-    match_report_fill.run()
-elif option == "Real Madrid: Jugadores":
-    player_profiles.run()
-
-
+    if option == "FortNITE: Vocabulario":
+        vocabulary_quiz.run()
+    elif option == "FortNITE: Gramática":
+        grammar_challenges.run()
+    elif option == "FortNITE: Galería con puntuación":
+        vocab_gallery.run()
+    elif option == "Real Madrid: Crónica":
+        match_report_fill.run()
+    elif option == "Real Madrid: Jugadores":
+        player_profiles.run()
 
