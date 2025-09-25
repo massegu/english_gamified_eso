@@ -1,26 +1,27 @@
 import streamlit as st
 from streamlit_app.components import interactive_cards
 
-# Lista de tarjetas
-cards = [
-    {
-        "image": "assets/images/shield.png",
-        "word": "Shield",
-        "definition": "A protective item that increases your defense.",
-        "audio": "assets/fortnite/shield.mp3",
-        "question": "What does 'Shield' do?",
-        "options": ["Heals you", "Protects you", "Makes you faster"],
-        "answer": "Protects you"
-    },
-    {
-        "image": "assets/images/storm.png",
-        "word": "Storm",
-        "definition": "A dangerous zone that reduces health.",
-        "audio": "assets/fortnite/storm.mp3",
-        "question": "What happens in the storm?",
-        "options": ["You get more loot", "You lose health", "You revive teammates"],
-        "answer": "You lose health"
-    }
+def run():
+    # Lista de tarjetas
+    cards = [
+      {
+         "image": "assets/images/shield.png",
+         "word": "Shield",
+         "definition": "A protective item that increases your defense.",
+         "audio": "assets/fortnite/shield.mp3",
+         "question": "What does 'Shield' do?",
+         "options": ["Heals you", "Protects you", "Makes you faster"],
+         "answer": "Protects you"
+      },
+      {
+         "image": "assets/images/storm.png",
+         "word": "Storm",
+         "definition": "A dangerous zone that reduces health.",
+         "audio": "assets/fortnite/storm.mp3",
+         "question": "What happens in the storm?",
+         "options": ["You get more loot", "You lose health", "You revive teammates"],
+         "answer": "You lose health"
+      }
 ]
 
 # Estado de navegación y puntuación
